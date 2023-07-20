@@ -7,7 +7,7 @@ import { ValidationError } from 'class-validator';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
-  const port =process.env.PORT;
+  const port =5000;
  
 
   app.useGlobalFilters(new ValidationFilter());
